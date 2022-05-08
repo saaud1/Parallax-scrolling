@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="./script.js"></script>
-        <title>Parallax Scrolling</title>
-    </head>
-    <body>
-        <div class="container">
-          <section class="background">
-            <div class="content-wrapper">
-              <p class="content-title">Full Page Parallax Effect</p>
-              <p class="content-subtitle">Scroll down and up to see the effect!</p>
-            </div>
-          </section>
-          <section class="background">
-            <div class="content-wrapper">
-              <p class="content-title">Saud Al-Anazi.</p>
-              <p class="content-subtitle">Computer Science Engineering, Network engineer & Web Developer.</p>
-            </div>
-          </section>
-          <section class="background">
-            <div class="content-wrapper">
-              <p class="content-title">CryptoCurrencies.</p>
-              <p class="content-subtitle">Investing in BTC, ETH & CRO.</p>
-            </div>
-          </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Parallax Effect</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+    <div class="container">
+        Parallax Effect Demo
+        <div class="float">
+            <div class="btn"></div>
         </div>
+
+    </div>
+    <div class="container parallax" id="parallax">
+        Parallax Container
+    </div>
+    <div class="container">
+        Made for LimeLight Task-2 deministration.
+    </div>
+
+    <div class="footer">
+        <div class="name">Made By Saud Al-Anazi</div>
+        <div class="title">
+            CSS Parallax Effect
+        </div>
+        <div class="links">
+            <a href="https://github.com/saaud1k" target="_blank">
+                <img src="images/github.png" alt="" height="25">
+            </a>
+            &nbsp;
+            <a href="e" target="_blank">
+                <img src="images/web.png" alt="" height="25">
+            </a>
+            &nbsp;
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.png" alt="" height="25">
+            </a>
+        </div>
+    </div>
 </body>
-  </html>
+<script>
+    function scroll_down(id_to_div) {
+        document.getElementById(id_to_div).scrollIntoView();
+    }
+</script>
+
+</html>
